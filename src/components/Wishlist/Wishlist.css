@@ -1,0 +1,55 @@
+.wish-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.wish-content {
+  color: #2a2f4f;
+  font-size: 2.25rem;
+  font-family: Fredoka;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 3.45rem;
+  margin-top: 7.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+/* .hline{
+    width: 80rem;
+    height: 0.00013rem;
+    transform: rotate(-0.022deg);
+    flex-shrink: 0;
+} */
+.main {
+  border-radius: 2.0625rem;
+  background: #3a4f7a;
+  /* width: 73.4375rem; */
+  min-height: 28rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem 3.25rem;
+}
+.card-body {
+  background-color: #fff5f9;
+}
+.move {
+    margin-left: 54rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5625rem;
+  background: #3a4f7a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+}
+.wish-btn{
+  display: flex;
+justify-content: space-between;  
+}

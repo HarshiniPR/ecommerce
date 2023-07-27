@@ -1,0 +1,75 @@
+.font-style1 {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2a2f4f;
+}
+.font-style2{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  /* line-height: 31px; */
+  color: #2a2f4f;
+  text-align: center;
+}
+.ads {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 90px;
+  margin-top: 4rem;
+}
+.ads p {
+  font-family: "Fredoka";
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  color: #2a2f4f;
+}
+.descrip {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ads img {
+  margin-left: 2rem ;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/* margin-top: 50px;   */
+}
+.all-feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 56px;
+}
+.all-feature span {
+  margin: 0px 20px;
+}
+.flower-container{
+  margin-top: 44px;
+}
+.flower-container2{
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1700px){
+  .ads{
+    display: flex;
+    justify-content: center;
+  }
+  .descrip{
+    margin-left: 4.9rem;
+  }
+}

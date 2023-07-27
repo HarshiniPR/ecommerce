@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="login.css">
+
+    <form method="post" id="reg_form">
+        <div class="form-structor">
+            <div class="signup">
+                <h2 class="form-title" id="signup"><span></span>Sign up</h2>
+                <div class="form-holder">
+                    <input type="text" id="name" class="input" placeholder="Name" required>
+                    <input type="text" id="usrname" class="input" placeholder="Username" required>
+                    <input type="email" id="email" class="input" placeholder="Email" required>
+                    <input type="number" id="num" class="input" placeholder="Mobile no." required>
+                    <input type="password" id="pass" class="input" placeholder="Password" required>
+                </div>
+                <button class="submit-btn">Sign up</button>
+            </div>
+        </div>
+    </form>
+    <form method="post" id="demo-form">
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span></span>Login</h2>
+                <div class="form-holder">
+                    <input type="email" class="input" placeholder="Email" id="cemail" required>
+                    <input type="password" class="input" placeholder="Password" id="cpassword" required>
+                    <input type="password" class="input" placeholder=" Confirm Password" required>
+
+                </div>
+                <button class="submit-btn">Log in</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="login.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#demo-form").submit(function(e) {
+                e.preventDefault();
+                // console.log(data);
+                var cemail = $('#cemail').val();
+                var cpassword = $('#cpassword').val();
+                if (cemail != '' && cpassword != '') {
+
+                    $.ajax({
+                        type: "POST",
+                        method: "POST",
+                        cache: false,
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        data: JSON.stringify({
+                            cemail: cemail,
+                            cpassword: cpassword
+                        }),
+                        url: "http://localhost:7000/userLogin",
+                        dataType: "JSON",
+                        success: function(data) {
+                            window.location.href = 'success.html';
+                        },
+                        error: function(err) {
+                            console.log(err);
+
+                            function showError() {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Oops!',
+                                    text: 'INCORRECT EMAIL OR PASSWORD..! YOU MUST TRY AGAIN.',
+                                    showConfirmButton: false,
+                                    timer: 2000 // Time in milliseconds (2 seconds in this example)
+                                }).then(function() {
+                                    location.reload(); // Reload the page after the alert is closed
+                                });
+                            }
+                            showError();
+                        }
+                    })
+                } else {
+                    alert("Fillup The Details")
+                }
+            });
+        });
+    </script>
+
+    <!-- reg -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#reg_form").submit(function(e) {
+                e.preventDefault();
+                // console.log(data);
+                var name = $('#name').val();
+                var usrname = $('#usrname').val();
+                var email = $('#email').val();
+                var number = $('#num').val();
+                var password = $('#pass').val();
+                if (name != '' && usrname != '') {
+
+                    $.ajax({
+                        type: "POST",
+                        method: "POST",
+                        cache: false,
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        data: JSON.stringify({
+                            cname: name,
+                            cusername: usrname,
+                            cemail: email,
+                            cnumber: number,
+                            cpassword: password
+                        }),
+                        url: "http://localhost:7000/newCustomer",
+                        dataType: "JSON",
+                        success: function(data) {
+                            function showSuccessAlertWithReload() {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Yeahh!',
+                                    text: 'DATA  INSERTED  SUCCESSFULLY..!.',
+                                    showConfirmButton: false,
+                                    timer: 2000 // Time in milliseconds (2 seconds in this example)
+                                }).then(function() {
+                                    location.reload(); // Reload the page after the alert is closed
+                                });
+                            }
+                            showSuccessAlertWithReload();
+                        },
+                        error: function(err) {
+                            console.log(err);
+                        }
+                    })
+                } else {
+                    alert("Fillup The Details")
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

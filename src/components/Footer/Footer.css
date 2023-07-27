@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #3a4f7a;
+}
+.footer-txt {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato";
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  /* identical to box height */
+  margin: 5.1rem 6.625rem 5.1rem 7.1rem;
+  color: #f8e8ee;
+}
+.social{
+    margin: 0.625rem;
+}
+
+@media screen and (min-width : 1700px) {
+  .footer-txt{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-txt .middle{
+    margin: 0 29rem;
+  }
+}
+@media  screen and (max-width:1240px) {
+  .footer{
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  }
+}

@@ -1,0 +1,82 @@
+.about {
+  margin-top: 70px;
+
+  background: #f0efef;
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.04em;
+  color: #0c134f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.up {
+  margin-top: -160px;
+}
+.low {
+  margin-left: 106px;
+}
+.ctr-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.abt{
+  margin-top: 50px;
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #0c134f;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.abt-style {
+  display: block;
+  margin: 20px auto 70px auto;
+}
+.abt-list {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+list-style-type: none;
+  color: #0c134f;
+  margin-left: 153px;
+  margin-bottom: 70px;
+  width: 1040px;
+  margin-top: 0px;
+  padding-left: 0;
+
+}
+.abt-list{
+    position: relative;
+}
+/* .leaf{
+    margin-left: 55px;
+} */
+ .leaf {
+    position: absolute;
+    margin-left: -104px;
+    transform: translateY(-40%);
+    pointer-events: none;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }

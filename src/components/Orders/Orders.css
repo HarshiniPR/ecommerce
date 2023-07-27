@@ -1,0 +1,78 @@
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background: url("./111.jpg") center / cover;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    color: rgb(232, 11, 122);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: center;
+}
+
+thead th {
+    /* position: sticky; */
+    top: 10%;
+    left: 10%;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.status {
+    padding: .6rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+    text-align: center;
+}
+
+.status.cancelled {
+    background-color: #e89eaf;
+    color: #b30021;
+    text-align: center;
+}
+
+.status.pending {
+    background-color: #ebc473;
+    color: #926202;
+    text-align: center;
+}
+
+.status.shipped {
+    background-color: #6fcaea;
+    color: rgb(46, 46, 220);
+    text-align: center;
+}

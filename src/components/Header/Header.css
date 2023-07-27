@@ -1,0 +1,81 @@
+.header {
+  width: 100%;
+  margin-top: 4.39rem;
+  background: #fff5f9;
+  position: relative; /* Add relative positioning */
+}
+.header-container{
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.heading {
+  width: 27rem;
+  font-family: "Give You Glory";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 109px;
+  color: #2a2f4f;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.head-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -6rem;
+}
+
+.desc {
+  margin: 3rem 0 2rem 0;
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #2c3150;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  background: #2a2f4f;
+  border-radius: 36px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff5f9;
+}
+
+.himg1 {
+  height: 30rem;
+}
+
+.vector1 {
+  width: 141.33px; 
+  margin-top: -29px;
+}
+
+@media (min-width: 1620px)  {
+  .header {
+    background: #fff5f9;
+    color: #2a2f4f;
+    width: 100vw;
+  }
+}
+@media (min-width: 1700px) {
+  .header-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .head-content{
+    margin-left: 27rem;
+  }
+}
