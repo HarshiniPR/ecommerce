@@ -30,28 +30,45 @@ const Newproducts = () => {
         <div className="prod-container font-style2">
           <div className="prodoct">
             <img src={images.rose} alt="rose" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart"  className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
+
             <p className="prod-name">Rose</p>
             <p className="prod-price">Rs. 50</p>
           </div>
           <div className="prodoct">
             <img src={images.lily} alt="lily" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
             <p className="prod-name">Lily</p>
             <p className="prod-price">Rs. 100</p>
           </div>
 
           <div className="prodoct">
             <img src={images.tulip} alt="tulip" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img"  />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
             <p className="prod-name">Tulip</p>
             <p className="prod-price">Rs. 250</p>
           </div>
           <div className="prodoct">
             <img src={images.daffo} alt="daffo" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
             <p className="prod-name">Daffodil</p>
             <p className="prod-price">Rs. 200</p>
           </div>
-          
+
         </div>
-        
+
       </div>
     </>
   );

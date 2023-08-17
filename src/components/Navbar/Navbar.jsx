@@ -21,12 +21,12 @@ const Navbar = () => {
                                     <Link to='/about'>ABOUT</Link>
                               </li>
                               <li>
-                                    <Link to='/contact'>CONTACT</Link>
+                                    <Link to='/terms'>T & C</Link>
                               </li>
                         </ul>
                         <div>
                               <Link to='/wishlist'>
-                                    <img src={images.wishlist} alt="wishlist" />
+                                    <img src={images.wishlist} alt="wishlist"/>
                               </Link>
                               <img src={images.cart} alt="cart" />
                               <img src={images.user} alt="user-profile" className='user-profile' />

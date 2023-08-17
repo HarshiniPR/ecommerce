@@ -68,7 +68,8 @@
 }
 
 .prodoct {
-  display: flex;
+  position: relative;
+  display: inline-block;
   flex-direction: column;
   margin-right: 2rem;
 }
@@ -76,6 +77,7 @@
 .prod-img {
   width: 275px;
   height: 354px;
+  transition: filter 0.3s ease;
 }
 
 .prod-name {
@@ -87,4 +89,26 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
+}
+.btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  padding: 10px;
+}
+.heart-img,
+.bag-img {
+  cursor: pointer;
+  width: 1.75rem;
+  height: 1.81rem;
+  margin-bottom: 0.5rem;
+}
+.prodoct:hover .btns {
+  display: flex;
+  opacity: 1;
+}
+.prodoct:hover .prod-img {
+  filter: blur(3px); /* Apply blur on hover */
 }

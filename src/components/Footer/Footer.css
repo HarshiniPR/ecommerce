@@ -30,11 +30,11 @@ footer {
     margin: 0 29rem;
   }
 }
-@media  screen and (max-width:1240px) {
-  .footer{
-
-    /* display: flex;
+/* @media  screen and (max-width:1240px) {
+  .footer-txt{
+ 
+    display: flex;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
   }
-}
+} */

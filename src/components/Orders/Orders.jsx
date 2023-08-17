@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import './Orders.css';
-
 
 export default function Orders() {
   return (
     <div className="orderss">
-      <h1 style={{margin: '40px 0px 40px 273px'}}>My Orders</h1>
+      <h1 className="order-h1" style={{margin: '40px 0px 40px 273px'}}>My Orders</h1>
       <table className="firstTable" style={{marginLeft:'160px'}}>
         <thead>
           <tr>

@@ -8,7 +8,7 @@ body {
     align-items: center;
 }
 
-h1 {
+.order-h1 {
     display: flex;
     justify-content: center;
     margin-top: 10%;

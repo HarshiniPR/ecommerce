@@ -34,8 +34,8 @@ import ellreview from "../assets/Ellipse-review.png";
 
 import abtimg from "../assets/aboutimg.png";
 import user from "../assets/user.svg";
-// import  from "../assets/.png";
-// import  from "../assets/.png";
+import heart from "../assets/heart.svg";
+import bag from "../assets/bag.svg";
 // import  from "../assets/.png";
 // import  from "../assets/.png";
 
@@ -75,6 +75,8 @@ const images = {
   leaf: leaf,
   user: user,
   abtimg,
+  heart: heart,
+  bag:bag,
 };
 
 export default images;

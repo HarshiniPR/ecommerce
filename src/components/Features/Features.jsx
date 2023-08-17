@@ -27,21 +27,37 @@ const Features = () => {
         <div className="flower-container font-style2">
           <div className="prodoct">
             <img src={images.fl1} alt="fl1" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
             <p className="prod-name">Pink Rose</p>
             <p className="prod-price">Rs. 50</p>
           </div>
           <div className="prodoct">
             <img src={images.fl2} alt="fl2" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
             <p className="prod-name">Bridal Bouquet</p>
             <p className="prod-price">Rs. 100</p>
           </div>
           <div className="prodoct">
             <img src={images.fl3} alt="fl3" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
             <p className="prod-name">Love Vase</p>
             <p className="prod-price">Rs. 250</p>
           </div>
           <div className="prodoct">
             <img src={images.fl4} alt="fl4" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
             <p className="prod-name">Love Bouquet</p>
             <p className="prod-price">Rs. 200</p>
           </div>
@@ -50,23 +66,39 @@ const Features = () => {
           <div className="flower-container2 font-style2">
 
             <div className="prodoct">
-              <img src={images.fl5} alt="fl5" className="prod-img" />
+            <img src={images.fl5} alt="fl5" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart"  className="heart-img"/>
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
               <p className="prod-name">Pink Rose</p>
               <p className="prod-price">Rs. 50</p>
             </div>
             <div className="prodoct">
-              <img src={images.fl6} alt="fl6" className="prod-img" />
+            <img src={images.fl6} alt="fl6" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart"  className="heart-img"/>
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
               <p className="prod-name">Bridal Bouquet</p>
               <p className="prod-price">Rs. 100</p>
             </div>
 
             <div className="prodoct">
-              <img src={images.fl7} alt="fl7" className="prod-img" />
+            <img src={images.fl7} alt="fl7" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
               <p className="prod-name">Love Vase</p>
               <p className="prod-price">Rs. 250</p>
             </div>
             <div className="prodoct">
-              <img src={images.fl8} alt="fl8" className="prod-img" />
+            <img src={images.fl8} alt="fl8" className="prod-img" />
+            <div className="btns">
+              <img src={images.heart} alt="heart" className="heart-img" />
+              <img src={images.bag} alt="bag" className="bag-img" />
+            </div>
               <p className="prod-name">Love Bouquet</p>
               <p className="prod-price">Rs. 200</p>
             </div>
